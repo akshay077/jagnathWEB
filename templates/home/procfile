@@ -1,0 +1,1 @@
+web : gunicorn jagnath.wsgi --log-file -

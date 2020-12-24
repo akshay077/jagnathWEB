@@ -1,0 +1,286 @@
+{% extends "home/base.html" %}
+
+{% block body %}
+
+
+        <!-- page-title -->
+        <div class="ttm-page-title-row">
+            <div class="ttm-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">Team Details</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" href="index.html">Home</a>
+                                </span>
+                                <span>Team Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+        </div><!-- page-title end-->
+
+
+    <!--site-main start-->
+    <div class="site-main">
+
+
+        <section class="ttm-row overview-section clearfix">
+            <div class="ttm-team-member-single-content-wrapper ttm-team-member-view-default">
+                <div class="container">
+                    <div class="ttm-team-member-single-content row">
+                        <div class="col-lg-5 col-md-5">
+                            <!-- featured-team-item -->
+                            <div class="featured-item featured-team-item ttm-item-view-leftimage"> 
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="/media/{{team.description}}" alt="image">
+                                </div> 
+                                <div class="featured-team-data">
+                                    <h5>Call Us: 123-456-79890</h5>
+                                </div>
+                            </div><!-- featured-team-item end--> 
+                        </div>
+                        <div class="ttm-team-member-single-content-area col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                            <div class="ttm-team-member-content shadow-box">
+                                <div class="ttm-team-member-single-list">
+                                    <h2 class="ttm-team-member-single-title">Personal Information</h2>
+                                    <div class="ttm-team-details-wrapper">
+                                        <ul class="ttm-team-details-list mb-20 clearfix">
+                                            <li>
+                                                <div class="ttm-team-list-title"><h5>Doctor Name: </h5></div>
+                                                <div class="ttm-team-list-value">{{team.Name}}</div>
+                                            </li>
+                                            <li>
+                                                <div class="ttm-team-list-title"><h5>Primary Specialty: </h5></div>
+                                                <div class="ttm-team-list-value">{{team.Post}}</div>
+                                            </li>
+                                            <li>
+                                                <div class="ttm-team-list-title"><h5>Experiance: </h5></div>
+                                                <div class="ttm-team-list-value">12+ Years</div>
+                                            </li>
+                                        </ul>
+                                        <div class="sep_holder_box width-100 mt-20 mb-30">
+                                            <span class="sep_holder"><span class="sep_line"></span></span>
+                                        </div>
+                                        <h2 class="ttm-team-member-single-title">Education & Training</h2>
+                                        <ul class="ttm-team-details-list clearfix">
+                                            <li>
+                                                <div class="ttm-team-list-title"><h5>Medical Education: </h5></div>
+                                                <div class="ttm-team-list-value">University of Sydney, Australia</div>
+                                            </li>
+                                            <li>
+                                                <div class="ttm-team-list-title"><h5>Residency: </h5></div>
+                                                <div class="ttm-team-list-value">Stereotactic Radiosurgery, Glioma</div>
+                                            </li>
+                                            <li>
+                                                <div class="ttm-team-list-title"><h5>Certifications: </h5></div>
+                                                <div class="ttm-team-list-value">American Board of Neurological Surgery</div>
+                                            </li>
+                                            <li>
+                                                <div class="ttm-team-list-title"><h5>Practice Areas: </h5></div>
+                                                <div class="ttm-team-list-value">Stereovctic Radiosurgery, Glioma</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sep_holder_box width-100 mt-20 mb-35">
+                                        <span class="sep_holder"><span class="sep_line"></span></span>
+                                    </div>
+                                    <div class="ttm-social-links-wrapper">
+                                        <ul class="social-icons">
+                                            <li class="social-facebook">
+                                                <a class="tooltip-top" target="_blank" href="#" data-tooltip="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li class="social-twitter">
+                                                <a class="tooltip-top" target="_blank" href="#" data-tooltip="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li class="social-gplus">
+                                                <a class="tooltip-top" target="_blank" href="#" data-tooltip="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ttm-team-member-single-content">
+                                <div class="ttm-team-member-content mt-40">
+                                    <div class="section-title">
+                                        <div class="title-header">
+                                            <h2 class="title">Biography</h2>
+                                        </div>
+                                    </div>
+                                    <p>Mauris id enim id purus ornare tincidunt. Aenean vel consequat risus.Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat, sem mi suscipit mi, at varius enim sem at sem. Fusce tempus ex nibh, eget vulputate ligula ornare eget. Nunc facilisis erat at ligula blandit tempor. ean vel consequat risus.Proin viverra nisi at nisl imperdiet auctolacerat, sem mi suscipit miusce temtate ligula ornare eget. Nunc facilisis erat at ligula blandit tempor. maecenas</p>
+                                    <p>unt. Aenean vel consequat risus.Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat, sem mi suscipit mi, at varius enim sem at sem. Fusce tempus ex nibh, eget vulputate ligula ornare eget. Nunc facilisn viverra nisi at nisl ugula ornare eget. Nunc facilisis erat at ligula blandit tempor. maecenas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ttm-row expertise-section ttm-bgcolor-grey bg-img5 ttm-bg ttm-bgimage-yes clearfix">
+            <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <div class="title-header">
+                                <h2 class="title">Work Experience & Skills</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="mt-15 pr-40 res-991-pr-0">
+                            <!-- ttm-progress-bar -->
+                            <div class="ttm-progress-bar" data-percent="88%">
+                                <div class="progressbar-title">Sample Preparation</div>
+                                <div class="progress-bar-inner">
+                                    <div class="progress-bar progress-bar-color-bar_skincolor"></div>
+                                </div>
+                                <div class="progress-bar-percent" data-percentage="88">88%</div>
+                            </div><!-- ttm-progress-bar end -->
+                            <!-- ttm-progress-bar -->
+                            <div class="ttm-progress-bar clearfix" data-percent="96%">
+                                <div class="progressbar-title">Environmental Testing</div>
+                                <div class="progress-bar-inner">
+                                    <div class="progress-bar progress-bar-color-bar_skincolor"></div>
+                                </div>
+                                <div class="progress-bar-percent" data-percentage="96">96%</div>
+                            </div><!-- ttm-progress-bar end -->
+                            <!-- ttm-progress-bar -->
+                            <div class="ttm-progress-bar clearfix" data-percent="90%">
+                                <div class="progressbar-title">Advanced Microscopy</div>
+                                <div class="progress-bar-inner">
+                                    <div class="progress-bar progress-bar-color-bar_skincolor"></div>
+                                </div>
+                                <div class="progress-bar-percent" data-percentage="90">90%</div>
+                            </div><!-- ttm-progress-bar end -->
+                            <!-- ttm-progress-bar -->
+                            <div class="ttm-progress-bar clearfix" data-percent="96%">
+                                <div class="progressbar-title">Environmental Testing</div>
+                                <div class="progress-bar-inner">
+                                    <div class="progress-bar progress-bar-color-bar_skincolor"></div>
+                                </div>
+                                <div class="progress-bar-percent" data-percentage="96">96%</div>
+                            </div><!-- ttm-progress-bar end -->
+                            <!-- ttm-progress-bar -->
+                            <div class="ttm-progress-bar clearfix" data-percent="90%">
+                                <div class="progressbar-title">Advanced Microscopy</div>
+                                <div class="progress-bar-inner">
+                                    <div class="progress-bar progress-bar-color-bar_skincolor"></div>
+                                </div>
+                                <div class="progress-bar-percent" data-percentage="90">90%</div>
+                            </div><!-- ttm-progress-bar end -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="res-991-pt-30">
+                            <!--featured-icon-box-->
+                            <div class="featured-icon-box icon-align-before-content icon-ver_align-top mt-15">
+                                <div class="featured-icon">
+                                    <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-md">
+                                        <i class="flaticon-scientist-1"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5>Intensive care</h5>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                                    </div>
+                                </div>
+                            </div><!-- featured-icon-box end-->
+                            <!--featured-icon-box-->
+                            <div class="featured-icon-box icon-align-before-content icon-ver_align-top mt-30">
+                                <div class="featured-icon">
+                                    <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-md">
+                                        <i class="flaticon-research-3"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5>Biology Research</h5>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                                    </div>
+                                </div>
+                            </div><!-- featured-icon-box end-->
+                            <!--featured-icon-box-->
+                            <div class="featured-icon-box icon-align-before-content icon-ver_align-top mt-30">
+                                <div class="featured-icon">
+                                    <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-md">
+                                        <i class="flaticon-lab-5"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5>Catalysis Processes</h5>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                                    </div>
+                                </div>
+                            </div><!-- featured-icon-box end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="ttm-row clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="section-title">
+                            <div class="title-header">
+                                <h2 class="title">Doctors <br>Achievements</h2>
+                            </div>
+                        </div>
+                        <p>Contaryb my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.ap into e was popularireeMaker including versions of Lorem Ipsum.adipisci velit, sed quia non numquam.</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row ttm-boxes-spacing-0px" >
+                            <div class="col-sm-4 ttm-box-col-wrapper text-center">
+                                <div class="border-bottom pb-10">
+                                    <img class="img-fluid" src="/static/images/award-one.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ttm-box-col-wrapper text-center border-left">
+                                <div class="border-bottom pb-10">
+                                    <img class="img-fluid" src="/static/images/award-three.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ttm-box-col-wrapper text-center border-left">
+                                <div class="border-bottom pb-10">
+                                    <img class="img-fluid" src="/static/images/award-two.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ttm-box-col-wrapper text-center">
+                                <img class="img-fluid" src="/static/images/award-two.png" alt="image">
+                            </div>
+                            <div class="col-sm-4 ttm-box-col-wrapper text-center border-left">
+                                <img class="img-fluid" src="/static/images/award-one.png" alt="image">
+                            </div>
+                            <div class="col-sm-4 ttm-box-col-wrapper text-center border-left">
+                                <img class="img-fluid" src="/static/images/award-three.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div><!--site-main end-->
+
+
+    <!--footer start-->
+{% endblock body %}

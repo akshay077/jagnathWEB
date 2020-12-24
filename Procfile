@@ -1,0 +1,1 @@
+web: gunicorn jagnath_website.wsgi

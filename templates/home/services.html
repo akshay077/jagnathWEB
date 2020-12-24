@@ -1,0 +1,71 @@
+{% extends "home/base.html" %}
+
+{% block body %}
+
+
+
+        <!-- page-title -->
+        <div class="ttm-page-title-row">
+            <div class="ttm-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">Services</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" href="/">Home</a>
+                                </span>
+                                <span>Services</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+        </div><!-- page-title end-->
+
+
+    <!--site-main start-->
+    <div class="site-main">
+
+        <!--grid-section-->
+        <section class="ttm-row grid-section clearfix">
+            <div class="container">
+                <!-- row -->
+                <div class="row multi-columns-row ttm-boxes-spacing-15px">
+                    {% for services in services %}
+                    <div class="ttm-box-col-wrapper col-lg-4 col-md-4 col-sm-6">
+                        <!-- featured-imagebox -->
+                        <div class="featured-imagebox featured-imagebox-services">
+                            <!-- featured-thumbnail -->
+                            <div class="featured-thumbnail">
+                                <a href="/single_service/{{services.id}}"> <img class="img-fluid" src="/media/{{services.serviceImg}}" alt="image"></a>
+                            </div><!-- featured-thumbnail end-->
+                            <div class="featured-content">
+                                <div class="fea_con_left">
+                                    <div class="ttm-icon ttm-icon_element-border ttm-icon_element-color-grey ttm-icon_element-size-xs ttm-icon_element-style-round">
+                                        <i class="flaticon-flask-3"></i>
+                                    </div>
+                                </div>
+                                <div class="fea_con_right">
+                                    <div class="featured-title">
+                                        <h5><a href="/single_service/{{services.id}}">{{services.title}}</a></h5>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>{{services.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- featured-imagebox -->
+                    </div>
+                    {% endfor %}
+                </div><!-- row end -->
+            </div>
+        </section>
+        <!--services-section end-->
+      
+    </div><!--site-main end-->
+
+    <!--footer start-->
+{% endblock body %}
